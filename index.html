@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jungle Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Freckle+Face" rel="stylesheet">
+</head>
+
+
+<body background="assets/images/background.jpg">
+
+    <div class="jumbotron pt-2 bg-transparent">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 class="display-2 text-white text-center head">Are you King of the Jungle?</h1>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <h3 class="col-10 text-white directions">Directions: You will be given a random number and each animal below
+                has been assigned the value of a random number (1-10). Click on each animal to add that value to your number.
+                Match your number with the random number exactly and you become King of the Jungle!
+                <br>
+                P.S. The number for each animal changes every round
+            </h3>
+            <div class="col-1"></div>
+        </div>
+        <br>
+        <div class="row" id="animals">
+            <div class="col-2"></div>
+            <div class="col-2" id="elephant" value=""><img class="img-thumbnail" src="assets/images/elephant.jpg" alt="elephant"></div>
+            <div class="col-2" id="hippo" value=""><img class="img-thumbnail" src="assets/images/hippo.jpg" alt="hippo"></div>
+            <div class="col-2" id="monkey" value=""><img class="img-thumbnail" src="assets/images/monkey.jpg" alt="monkey"></div>
+            <div class="col-2" id="lion" value=""><img class="img-thumbnail" src="assets/images/lion.jpg" alt="lion"></div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 text-white">
+                <h2>Target Number: <span id="random-number"></span></h2>
+            </div>
+            <div class="col-4 text-white">
+                <h2>Wins: <span id="wins"></span></h2>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4 text-white">
+                <h2>Your Number: <span id="user-number"></span></h2>
+            </div>
+            <div class="col-4 text-white">
+                <h2>Losses: <span id="losses"></span></h2>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 text-white" id="win-lose"></div>
+            <div class="col-2"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8"><button type="button" class="btn btn-light text-success" id="play-again">Play Again!</button></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT  -->
+    <script src="assets/javascript/game.js"></script>
+
+
+
+</body>
+
+</html>
